@@ -1,7 +1,6 @@
 import React from 'react'
 
-// import { Container } from './styles';
-import Main from '~/components/Main/index'
+import { Main } from '~/components'
 
 const pages: React.FC = () => {
   return <Main />
