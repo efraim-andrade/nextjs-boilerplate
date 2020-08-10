@@ -12,5 +12,8 @@ module.exports = {
     '!src/pages/_document.tsx'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-  modulePaths: ['<rootDir>/src/']
+  modulePaths: ['<rootDir>/src/'],
+  moduleNameMapper: {
+    '~/(.*)': '<rootDir>/src/$1'
+  }
 }
