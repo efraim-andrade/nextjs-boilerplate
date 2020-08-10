@@ -5,8 +5,8 @@ module.exports = {
   collectCoverageFrom: [
     'src/pages/**/*.tsx',
     'src/components/**/*.tsx',
-    'src/utils/**/*.ts',
-    'src/hooks/**/*.ts',
+    'src/utils/**/*.ts(x)?',
+    'src/hooks/**/*.ts(x)?',
     '!src/**/*.stories.tsx',
     '!src/pages/_app.tsx',
     '!src/pages/_document.tsx'
