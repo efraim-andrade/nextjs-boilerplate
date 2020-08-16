@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { StoryFn } from '@storybook/addons'
+
+import GlobalStyles from '../src/styles/global'
 
 const Center = styled.div`
   width: 100%;
@@ -12,6 +13,12 @@ const Center = styled.div`
   background: #e5e5e5;
 `
 
-const withCenterWrapper = (storyFn: StoryFn) => <Center>{storyFn()}</Center>
+export const decorators = [
+  (Story) => (
+    <Center>
+      <GlobalStyles />
 
-export default withCenterWrapper
+      <Story />
+    </Center>
+  )
+]
