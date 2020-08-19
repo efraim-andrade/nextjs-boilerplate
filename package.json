@@ -12,7 +12,8 @@
     "test:watch": "jest --coverage=false --watchAll=true",
     "test:coverage": "jest",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "build-storybook": "build-storybook -s ./public",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "next": "9.5.2",
@@ -48,6 +49,7 @@
     "jest": "^26.4.0",
     "jest-styled-components": "^7.0.2",
     "lint-staged": "^10.2.11",
+    "plop": "^2.7.4",
     "prettier": "^2.0.5",
     "stylelint": "^13.6.1",
     "stylelint-config-idiomatic-order": "^8.1.0",
