@@ -1,5 +1,6 @@
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
+import theme from '../src/styles/theme'
 import GlobalStyles from '../src/styles/global'
 
 const Center = styled.div`
@@ -15,10 +16,12 @@ const Center = styled.div`
 
 export const decorators = [
   (Story) => (
-    <Center>
-      <GlobalStyles />
+    <ThemeProvider theme={theme}>
+      <Center>
+        <GlobalStyles />
 
-      <Story />
-    </Center>
+        <Story />
+      </Center>
+    </ThemeProvider>
   )
 ]
